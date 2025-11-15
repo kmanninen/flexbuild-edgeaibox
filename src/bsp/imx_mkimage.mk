@@ -84,9 +84,6 @@ define imx_mkimage_target
 	$$opdir/spl/u-boot-spl.bin $$opdir/u-boot.bin \
 	$$opdir/arch/arm/dts/*$${plat}*.dtb \
 	$$opdir/u-boot-nodtb.bin && \
-	if [ $${MACHINE} = imx8mpfrdm ]; then \
-        cp -f $(BSPDIR)/imx_mkimage/$$SOC_FAMILY/imx8mp-frdm.dtb $(BSPDIR)/imx_mkimage/$$SOC_FAMILY/imx8mp-evk.dtb; \
-	fi && \
     if [ "$(CONFIG_OPTEE)" = "y" -a -f "$$bl32" ]; then \
 	cp -f $$bl32 $(BSPDIR)/imx_mkimage/$$SOC_FAMILY/tee.bin; \
     fi && \
