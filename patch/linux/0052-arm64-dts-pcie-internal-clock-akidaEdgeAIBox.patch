@@ -1,18 +1,18 @@
 diff --git a/arch/arm64/boot/dts/freescale/imx8mp-evk.dts b/arch/arm64/boot/dts/freescale/imx8mp-evk.dts
-index 695d76afdfaf..f3a2a2f9be88 100644
+index 695d76afdfaf..92077d23a816 100644
 --- a/arch/arm64/boot/dts/freescale/imx8mp-evk.dts
 +++ b/arch/arm64/boot/dts/freescale/imx8mp-evk.dts
-@@ -65,8 +65,8 @@ reg_can2_stby: regulator-can2-stby {
- 
+@@ -66,8 +66,8 @@ reg_can2_stby: regulator-can2-stby {
  	reg_pcie0: regulator-pcie {
  		compatible = "regulator-fixed";
--		pinctrl-names = "default";
+ 		pinctrl-names = "default";
 -		pinctrl-0 = <&pinctrl_pcie0_reg>;
-+		// pinctrl-names = "default";
-+		// pinctrl-0 = <&pinctrl_pcie0_reg>;
- 		regulator-name = "MPCIE_3V3";
+-		regulator-name = "MPCIE_3V3";
++		/* pinctrl-0 = <&pinctrl_pcie0_reg>; */
++		/* regulator-name = "MPCIE_3V3"; */
  		regulator-min-microvolt = <3300000>;
  		regulator-max-microvolt = <3300000>;
+ 		gpio = <&gpio2 6 GPIO_ACTIVE_HIGH>;
 @@ -780,8 +780,8 @@ dsim_to_adv7535: endpoint {
  };
  
