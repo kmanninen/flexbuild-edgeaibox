@@ -1,3 +1,9 @@
+## Edge AI Box Build Environment
+
+This repository is a fork of NXP's FlexBuild system, customized for building Debian Linux images for Brainchip's **Edge AI Box** - a custom i.MX8 MP EVK development board. The [Edge AI Box](https://brainchip.com/metatf-dev-tools/) features an M.2 slot designed to accommodate Brainchip's M.2 Development Cards, which leverage the Akida ultra energy-efficient neural processor architecture for edge AI applications.
+
+---
+
 ## FlexBuild Overview
 ---------------------
 FlexBuild is a component-oriented lightweight build system and integration platform with

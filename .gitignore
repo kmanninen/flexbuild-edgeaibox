@@ -1,3 +1,8 @@
+# Driver.ai MCP connection settings
+.mcp.json
+.claude
+CLAUDE.md
+
 # Build products
 components_lsdk*
 build_lsdk*
